@@ -1,21 +1,23 @@
 /* eslint-disable no-unused-vars */
 
 export class SerieStructure {
-  isWatched: boolean;
+  watched: boolean;
   score: number;
   constructor(
-    public name: number,
+    public id: number,
+    public name: string,
     public creator: string,
     public year: number,
     public poster: string,
     public emmies: number
   ) {
+    this.id;
     this.name;
     this.creator;
     this.year;
     this.poster;
     this.emmies;
-    this.isWatched = false;
+    this.watched = false;
     this.score = 0;
   }
 }
